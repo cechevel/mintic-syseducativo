@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Layout</title>
+    <link rel="stylesheet" href="/css/minireset.css" />
+    <link rel="stylesheet" href="/css/global.css" />
   </head>
   <body>
     <!-- Menu de navegacion -->
     <aside class="side-menu">
       <ul>
+        <li><a href="#">Dashboard</a></li>
         <li><a href="#">Usuarios</a></li>
         <!-- Alumnos -->
         <li><a href="#">Materias</a></li>
@@ -25,25 +28,31 @@
       </li>
       <ul>
         <li><a href="#">Perfil</a></li>
+        <li><a href="#"> --- </a></li>
         <li><a href="#">Salir</a></li>
       </ul>
     </nav>
     <main class="container">
-      <div class="saludo">
-        <h1>
-          Hola <span id="logeduser">Username</span>, Bienvenido al sistema
-          educativo, SysEducativo
-        </h1>
-      </div>
-      <section class="datos">
-        <!-- Aqui estaria la informacion del usuario logeado-->
-      </section>
-      <section class="noticias">
-        <!-- Aqui estarian las noticias importantes del sistema o de la institucion -->
-      </section>
-      <footer class="footer">
-        <p>Copyright &copy; 2021 - SysEducativo</p>
-      </footer>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre del alumno</th>
+            <th>Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <td>Roberto Paternina</td>
+          <td>
+            <button>Generar reporte</button>
+            <button>Ver en la pagina</button>
+          </td>
+        </tbody>
+      </table>
     </main>
+    <footer class="footer">
+      <p>Copyright &copy; 2021 - SysEducativo</p>
+    </footer>
+
+    <script src="/js/global.js"></script>
   </body>
 </html>
